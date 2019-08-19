@@ -1,0 +1,29 @@
+<html>
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+  <style>#arjsDebugUIContainer { display: none; }</style>
+
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+      
+      <a-marker preset="hiro">
+        
+        <a-box color="#eebb99" position="0 0 -10" rotation="0 30 0" scale="2 1 2"></a-box>
+        
+        <a-box color="#000" position="0.530 -0.15 -9.182" rotation="0 30 0" scale="1 0.7 0.1"></a-box>
+        
+        <a-cone color="#63574f" position="0 1 -10" radius-bottom="1.5" radius-top="0"></a-cone>
+
+        <a-box color="#3dff70" position="0.163 -1 -9.253" rotation="0 30 0" scale="30 0.1 30"></a-box>
+        
+        <a-entity position="0 0 0">
+            <a-camera id="camera">
+            </a-camera>
+        </a-entity>
+        
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
